@@ -75,7 +75,20 @@ p {
 .education {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 20px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.education strong {
+  font-size: 13px;
+}
+
+.education-date {
+  font-size: 13px;
+  white-space: nowrap;
+  text-align: right;
 }
 
 @media (max-width: 600px) {
