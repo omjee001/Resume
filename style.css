@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  background: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.resume {
+  width: 850px;
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 45px 55px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.contact {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.contact a {
+  color: #111;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 16px;
+  border-bottom: 1px solid #111;
+  padding-bottom: 4px;
+  margin-top: 22px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 15px;
+  margin: 12px 0 4px;
+}
+
+.tech {
+  font-size: 13px;
+  font-style: italic;
+  margin: 0 0 5px;
+}
+
+ul {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+li {
+  font-size: 13px;
+  line-height: 1.45;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.education {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .resume {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 25px;
+    box-shadow: none;
+  }
+
+  .education {
+    display: block;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .resume {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none;
+  }
+}
