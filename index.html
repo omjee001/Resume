@@ -1,113 +1,279 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Om Jee - Resume</title>
+
   <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
   <main class="resume">
+
+    <!-- HEADER -->
+
     <h1>OM JEE</h1>
+
     <div class="contact">
+
       <a href="tel:+919135633401">+91-9135633401</a>
+
       |
+
       <a href="mailto:omjee7253@gmail.com">omjee7253@gmail.com</a>
+
       |
+
       <a href="https://linkedin.com/in/om-jee-a13833285"
+
          target="_blank"
+
          rel="noopener noreferrer">LinkedIn</a>
+
       |
+
       <a href="https://github.com/omjee001"
+
          target="_blank"
+
          rel="noopener noreferrer">GitHub</a>
+
       |
+
       Mysore, Karnataka, India
+
     </div>
+
+    <!-- PROJECTS -->
+
     <h2>PROJECTS</h2>
+
     <h3>Telehealth & Real-Time Consultation Engine</h3>
+
     <p class="tech">
+
       Node.js, Express.js, React.js, MongoDB, Socket.io, JWT, Redis, bcryptjs
+
     </p>
+
     <ul>
+
       <li>
+
         Built a bi-directional messaging engine with Socket.io for real-time
+
         doctor-patient consultations.
+
       </li>
+
       <li>
+
         Designed a short-lived, stateful JWT guest-login flow enabling
+
         emergency consultation access without full registration.
+
       </li>
+
       <li>
+
         Built background worker scripts to periodically purge inactive guest
+
         profiles and stale chat history.
+
       </li>
+
       <li>
+
         Implemented real-time online/offline status and typing indicators by
+
         managing active socket connection state in-memory.
+
       </li>
+
       <li>
+
         Used bcryptjs for password hashing and JWT for stateless role-based
+
         access control across Admin, Doctor, and Patient roles.
+
       </li>
+
     </ul>
+
     <h3>Distributed URL Shortener & Analytics Engine</h3>
+
     <p class="tech">
+
       Node.js, Express.js, MySQL, Redis, Docker, Base62 Encoding
+
     </p>
+
     <ul>
+
       <li>
+
         Built a horizontally scalable Node.js/Express.js backend supporting
+
         high-throughput concurrent traffic with no local session dependency.
+
       </li>
+
       <li>
+
         Implemented collision-free short URLs using Redis atomic INCR for
+
         global IDs, encoded with a custom Base62 algorithm.
+
       </li>
+
       <li>
+
         Designed a cache-aside pattern with Redis for sub-millisecond
+
         redirects, with fail-open fallback to MySQL on cache outage.
+
       </li>
+
       <li>
+
         Implemented hash-based sharding across MySQL instances, routing by
+
         short-code hash to avoid cross-shard joins.
+
       </li>
+
       <li>
+
         Deployed an IP-based sliding-window rate limiter backed by Redis to
+
         secure the write path against abuse.
+
       </li>
+
     </ul>
+
+    <!-- TECHNICAL SKILLS -->
+
     <h2>TECHNICAL SKILLS</h2>
+
     <ul>
-      <li><strong>Languages:</strong> C++, C, Python, JavaScript</li>
-      <li><strong>Web & Frameworks:</strong> Node.js, Express.js, React.js, REST APIs, HTML5, CSS3</li>
-      <li><strong>Databases & Caching:</strong> MySQL, MongoDB, Redis</li>
-      <li><strong>Real-Time & Auth:</strong> Socket.io (WebSockets), JWT, bcryptjs, Role-Based Access Control</li>
-      <li><strong>Tools & DevOps:</strong> Docker, Git, GitHub</li>
-      <li><strong>Core CS:</strong> Data Structures & Algorithms, OOP, DBMS, Computer Networks, Operating Systems</li>
-    </ul>
-    <h2>EDUCATION</h2>
-    <div class="education">
-      <div>
-        <strong>The National Institute of Engineering (NIE), Mysuru</strong><br>
-        B.E. in Information Science & Engineering<br>
-        CGPA: 8.2
-      </div>
-      <div>
-        Sept 2023 - Jul 2027
-      </div>
-    </div>
-    <h2>ACHIEVEMENTS & CERTIFICATIONS</h2>
-    <ul>
+
       <li>
-        <strong>Data Structures & Algorithms:</strong>
-        Solved 150+ problems on LeetCode and GeeksforGeeks, building consistent
-        problem-solving proficiency.
+
+        <strong>Languages:</strong>
+
+        C++, C, Python, JavaScript
+
       </li>
+
+      <li>
+
+        <strong>Web & Frameworks:</strong>
+
+        Node.js, Express.js, React.js, REST APIs, HTML5, CSS3
+
+      </li>
+
+      <li>
+
+        <strong>Databases & Caching:</strong>
+
+        MySQL, MongoDB, Redis
+
+      </li>
+
+      <li>
+
+        <strong>Real-Time & Auth:</strong>
+
+        Socket.io (WebSockets), JWT, bcryptjs, Role-Based Access Control
+
+      </li>
+
+      <li>
+
+        <strong>Tools & DevOps:</strong>
+
+        Docker, Git, GitHub
+
+      </li>
+
+      <li>
+
+        <strong>Core CS:</strong>
+
+        Data Structures & Algorithms, OOP, DBMS, Computer Networks, Operating Systems
+
+      </li>
+
     </ul>
+
+    <!-- EDUCATION -->
+
+    <h2>EDUCATION</h2>
+
+    <div class="education">
+
+      <div>
+
+        <strong>The National Institute of Engineering (NIE), Mysuru</strong>,
+
+        CGPA: 8.2
+
+        <br>
+
+        B.E. in Information Science & Engineering
+
+      </div>
+
+      <div class="education-date">
+
+        Sept 2023 - Jul 2027
+
+      </div>
+
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+
+    <h2>ACHIEVEMENTS & CERTIFICATIONS</h2>
+
+    <ul>
+
+      <li>
+
+        <strong>Data Structures & Algorithms:</strong>
+
+        Solved 150+ problems on LeetCode and GeeksforGeeks, building consistent
+
+        problem-solving proficiency.
+
+      </li>
+
+    </ul>
+
   </main>
-  <div style="text-align: center; margin: 20px;">
-    <a href="Om_RESUME.pdf" download>Download Resume</a>
+
+  <!-- DOWNLOAD PDF -->
+
+  <div class="download">
+
+    <a href="Om_RESUME.pdf" download>
+
+      Download Resume PDF
+
+    </a>
+
   </div>
+
 </body>
+
 </html>
